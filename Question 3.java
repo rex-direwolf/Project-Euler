@@ -1,9 +1,9 @@
 class P3
 {
-	public static void main(String args[])
+	 static long f(long n)
 	{
-		long i,J,max,max2,a=0,c=0;
-	 long n=600851475143,max=0;	
+		long i,J,max=0,max2,a=0,c=0;
+	 	
 	 	for(i=2;i<n;i++)
 		{
 			if(n%i==0)
@@ -24,13 +24,18 @@ class P3
 						if(max2>max)
 						{
 							max=max2;
+							
 						}
 						}
 				}
-				c=0;
+				c=0;}
+				return max;
 				}
-			System.out.println("largest prime factor is ="+max);
-		}
-	}
+				public static void main(String args[])
+				{
+					long n=600851475143L;
+			System.out.println(f(n));
+		
+	}}
     
     
