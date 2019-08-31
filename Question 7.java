@@ -2,10 +2,10 @@ class p7{
 	public static void main(String args[])
 	{
 		int i,J,c,n=0;
-		for(i=2;;i++)
+		for(i=3;;i=i+2)
 		{ 
 			c=0;
-			for(J=1;J<=i;J++)
+			for(J=1;J<=i/2;J++)
 			{
 				if(i%J==0)
 {
@@ -16,7 +16,7 @@ if(c==2)
 {
 	n++;
 }
-if(n==10001)
+if(n==10000)
 {
 	
 	System.out.println(i);
