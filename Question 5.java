@@ -1,8 +1,8 @@
 class p5{
 	public static void main(String args[])
 	{
-		int i,J,min,c=0;
-		for(i=1;;i++)
+		int i=1,J,min=0,c=0;
+		while(i>0)
 		{
 			for(J=1;J<=20;J++)
 			{
@@ -13,10 +13,10 @@ class p5{
 				else{
 					c=0;
 					break;
-					}}
+					}}i++;
 					if(c==1)
 					{
-						min=i;
+						min=i-1;
 						break;
 						
 					}
