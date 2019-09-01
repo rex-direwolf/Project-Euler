@@ -1,41 +1,28 @@
-class P3
+class p3
 {
-	 static long f(long n)
+static long pf(long n)
+{
+long p=-1;
+while (n%2==0)
+{
+p = 2;
+n=n/2;
+}
+for (int i=3;i<=Math.sqrt(n);i=i+2)
+{
+	while(n%i==0)
 	{
-		long i,J,max=0,max2,a=0,c=0;
-	 	
-	 	for(i=2;i<n;i++)
-		{
-			if(n%i==0)
-			{
-				a=i;
-				c=0;
-				
-				for(J=1;J<=i;J++)
-				{
-					if(a%J==0)
-					{
-						c++;
-					}
-				}
-		if(c==2)
-					{
-						max2=i;
-						if(max2>max)
-						{
-							max=max2;
-							
-						}
-						}
-				}
-				c=0;}
-				return max;
-				}
-				public static void main(String args[])
-				{
-					long n=600851475143L;
-			System.out.println(f(n));
-		
-	}}
-    
+		p=i;
+		n=n/i;
+	}
+}
+if(n>2)
+p=n;
+ return p;
+}
+public static void main(String[] args)
+{
+ long n = 600851475143L;
+System.out.println(pf(n));
+}}
     
